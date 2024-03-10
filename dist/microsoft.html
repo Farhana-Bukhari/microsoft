@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>microsoft clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="box-border font-sans w-screen mx-auto">
+
+    <!---------------------------- navbar small screen------------------- -->
+    <div class="h-[54px] min-w-full  px-10 border-2  lg:hidden box-border">
+        <div class=" h-[54px] w-[100%] flex justify-between ">
+            <div class="flex">
+                <div class="pt-4 pr-[9px] pb-8 mr-2"><i class="fa-solid fa-bars"></i></div>
+                <div class="pt-4 pr-[9px] pb-8 mr-2">
+                    <button class="text-sm "><i class="fa-solid fa-magnifying-glass text-[#262626]"></i></button>
+                </div>
+            </div>
+
+            <div class="h-[54px] w-[137px] flex  justify-between pt-4 pr-[6px] pb-4 pl-[10px]">
+                <img class="h-[23px] w-[108px] bg-contain mt-[-3px]" src="RE1Mu3b.png" alt="img">
+            </div>
+            <div class="flex">
+                <div class="pt-4 pr-[9px] pb-8 mr-2">
+                    <a class="text-sm" href=""><i class="text-[#262626] fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div
+                    class="h-9 w-9 mt-2 mr-2 border-[#262626] border-[1px] rounded-full p-2 flex items-center justify-center ">
+                    <i class="text-[#262626] fa-solid fa-user-plus"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ------------------------navbar large screen--------------------------------- -->
+    <div class="h-[54px] w-screen px-16 border-2 hidden lg:block box-border">
+
+        <div class=" h-[54px] w-[100%] flex ">
+
+            <div class="h-[54px] w-[165px] flex  justify-between pt-4 pr-[6px] pb-4 pl-[10px]">
+                <img class="h-[23px] w-[100%] bg-contain mt-[-3px]" src="RE1Mu3b.png" alt="img">
+            </div>
+
+            <div class="h-[49px] w-[100%] ">
+                <ul class="flex">
+                    <li class="pt-4 pr-2 pb-[10px] pl-2 mt-[-3px] text-[#262626] hover:underline"><a class="text-sm"
+                            href="#">Microsoft
+                            365</a></li>
+                    <li class="pt-4 pr-2 pb-[10px] pl-2 mt-[-3px] text-[#262626] hover:underline"><a class="text-sm"
+                            href="#">Teams</a>
+                    </li>
+                    <li class="pt-4 pr-2 pb-[10px] pl-2 mt-[-3px] text-[#262626] hover:underline"><a class="text-sm"
+                            href="#">Copilot</a></li>
+                    <li class="pt-4 pr-2 pb-[10px] pl-2 mt-[-3px] text-[#262626] hover:underline"><a class="text-sm"
+                            href="#">Windows</a></li>
+                    <li class="pt-4 pr-2 pb-[10px] pl-2 mt-[-3px] text-[#262626] hover:underline"><a class="text-sm"
+                            href="#">Surface</a></li>
+                    <li class="pt-4 pr-2 pb-[10px] pl-2 mt-[-3px] text-[#262626] hover:underline"><a class="text-sm"
+                            href="#">Xbox</a>
+                    </li>
+                    <li class="pt-4 pr-2 pb-[10px] pl-2 mt-[-3px] text-[#262626] hover:underline"><a class="text-sm"
+                            href="#">Support</a></li>
+                </ul>
+            </div>
+
+            <div class="h-[54px] w-[250px] flex">
+                <div class="pt-4 pr-5 pb-4 pl-4 mr-2 flex">
+                    <button class="w-[100px] microsoftBtn text-sm hover:underline">All Microsoft</button>
+                    <span class="h-2 w-2 ml-2"> <i class="fa-solid fa-caret-down"></i></span>
+                </div>
+                <div class="pt-4 pr-[9px] pb-8 mr-2">
+                    <button class="text-sm "><i class="fa-solid fa-magnifying-glass text-[#262626]"></i></button>
+                </div>
+                <div class="pt-4 pr-[9px] pb-8 mr-2">
+                    <a class="text-sm" href=""><i class="text-[#262626] fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div
+                    class="signInBtn h-9 w-9 mt-2 mr-2 border-[#262626] border-[1px] rounded-full p-2 flex items-center justify-center ">
+                    <i class="text-[#262626] fa-solid fa-user-plus"></i>
+                </div>
+            </div>
+        </div>
+        <!-- -------------------------------microsoft modal window---------------------- -->
+        <div
+            class="modalWindowMicrosoft w-[97%] absolute top-[3rem] left-0 z-30 bg-[#f2f2f2] border-b-2 border-black  mx-4 hidden">
+            <div class=" grid grid-cols-6 px-6 py-2">
+                <ul>
+                    <h1 class="py-[7px] text-sm  font-semibold leading-8">Software</h1>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Windows
+                        Apps</li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        AI</li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        OneDrive
+                    </li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Outlook
+                    </li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Skype</li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        OneNote
+                    </li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Microsoft
+                        Teams</li>
+                </ul>
+                <ul>
+                    <h1 class="py-[7px] text-sm  font-semibold leading-8">PCs & Devices</h1>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Shop Xbox
+                    </li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Accessories</li>
+                </ul>
+                <ul>
+                    <h1 class="py-[7px] text-xs  font-semibold leading-8">Entertainment</h1>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Xbox Game
+                        Pass Ultimate</li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Xbox Live
+                        Gold</li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Xbox games
+                    </li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        PC games
+                    </li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Windows
+                        digital games</li>
+                </ul>
+                <ul>
+                    <h1 class="py-[7px] text-sm font-semibold leading-8">Business</h1>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Microsoft
+                        Cloud</li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Microsoft
+                        Security</li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Azure</li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Dynamics
+                        365</li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Microsoft
+                        365 for business</li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Microsoft
+                        Industry</li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Microsoft
+                        Power Platform</li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Windows
+                        365</li>
+                </ul>
+                <ul>
+                    <h1 class="py-[7px] text-sm font-semibold leading-8">Developer & IT</h1>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Developer
+                        Center</li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Documentation</li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Microsoft
+                        Learn</li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Microsoft
+                        Tech Community</li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Azure
+                        Marketplace</li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        AppSource
+                    </li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Visual
+                        Studio</li>
+                </ul>
+                <ul>
+                    <h1 class="py-[7px] text-sm font-semibold leading-8">Other</h1>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Free
+                        download & Security</li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Education
+                    </li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Gift Cards
+                    </li>
+                    <li
+                        class="py-[7px] text-[0.8rem] text-[#3b3a3a] pr-4 hover:underline hover:cursor-pointer leading-8">
+                        Licensing
+                    </li>
+                </ul>
+            </div>
+            <div class="h-10 bg-[#e6e6e6] text-[#616161] flex justify-center items-center">
+                <p>VIEW SITEMAP <span><i class=" ml-2 fa-solid fa-chevron-right"></i></span></p>
+            </div>
+        </div>
+        <!-- -------------------------------------------------------------- -->
+        <!-- --------------------------sign in modal window------------------------------------ -->
+        <div
+            class="signInModal h-auto w-[35%] absolute  top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-30 hidden">
+            <div class="w-full bg-white p-12 shadow-md shadow-slate-700">
+                <div class=" flex justify-end">
+                    <button class="cancelBtn">
+                        &#10060
+                    </button>
+                </div>
+                <div class="mb-6">
+                    <img class="h-[23px] w-[108px] bg-contain mt-[-3px]" src="RE1Mu3b.png" alt="img">
+
+                </div>
+                <h1 class="mb-6 font-semibold text-2xl">Sign in</h1>
+                <input class="w-full border-b-[1px] border-blue-600 bg-white text-xs mb-4" type="text"
+                    placeholder="Email,Phone, or Skype ">
+                <p class="mb-4 text-xs">No account?<a class="text-[#0067b8]" href="">Create one!</a></p>
+                <a class="text-[#0067b8] text-xs flex mb-4" href="">Sign in with Windows Hello or a security key
+                    <div
+                        class="h-4 w-4 rounded-full border-black border flex justify-center items-center text-black ml-1">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                </a>
+                <div class="flex justify-end">
+                    <button class="bg-[#0067b8] mt-2 pt-1 px-9 pb-1 text-white font-semibold">Next</button>
+                </div>
+
+            </div>
+            <div class="h-12 bg-white mt-4 flex items-center px-12 shadow-md shadow-slate-700">
+                <span><img class="bg-cover text-sm h-8 w-8" src="signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg"
+                        alt=""></span>
+                <p>Sign-in options</p>
+            </div>
+        </div>
+        <!-- --------------------------------------------------------- -->
+        <div class="overlay h-full w-full absolute top-0 left-0  backdrop:blur-xl bg-slate-200 z-20 hidden"></div>
+
+
+
+    </div>
+
+
+    <!------------------------------- blue headline--------------------------- -->
+    <div class=" h-auto w-screen">
+        <div class=" bg-[#0067b8] text-white font-medium  pt-4 pr-6 pb-4 pl-6 flex justify-center items-center ">
+            <p class="align-middle hover:cursor-pointer hover:underline">Require assistance with Microsoft 365? Call
+                0008004402127
+                to inquire or
+                make a purchase.</p>
+            <span><i class=" ml-2 fa-solid fa-chevron-right"></i></span>
+        </div>
+    </div>
+
+    <!-- ------------------------------hero section-------------------------------- -->
+
+    <!-- ---------------slider-------------------------------- -->
+
+
+    <div class="container w-[100vw] min-w-[100vw] min-h-[51rem] lg:min-h-0 lg:h-[35rem]">
+        <div class="carousel h-full w-[100%] flex justify-start overflow-hidden">
+            <div class="slider h-full w-[200%] shrink-0 flex transition-all ">
+
+                <div class="h-[100%]  flex-shrink-0 flex-1  w-[50%] basis-50%  lg:relative">
+                    <div
+                        class="slide1 h-[36.25rem] lg:h-[100%] w-[100%] basis-50% shrink-0 bg-[url('Highlight-Slim-Multi-Canvas-M365-Anthem-Attract-Image-Create_VP4-1399x600 (1).avif')] lg:bg-[url('Highlight-Slim-Multi-Canvas-M365-Anthem-Attract-Image-Create_VP4-1399x600 (1).avif')] bg-cover bg-center">
+                    </div>
+                    <div
+                        class="h-auto bg-white text-black shadow-md  static lg:shadow-none  lg:h-auto lg:bg-transparent lg:absolute lg:top-24 lg:left-[4.2rem] lg:w-[35%]  p-12">
+                        <h1 class="font-semibold leading-tight text-[1.7rem] mb-1">Maximise the everyday with Microsoft
+                            365
+                        </h1>
+                        <p class="mb-4">Get online protection, secure cloud storage and innovative apps designed to fit
+                            your needs –
+                            all in one plan</p>
+                        <div class="flex flex-wrap items-center">
+                            <button
+                                class="bg-[#0067b8] mt-2 mr-6 mb-2 pt-[0.625rem] pr-[0.75rem] pb-[0.625rem] pl-[0.75rem] rounded-sm text-white font-semibold">For
+                                one person </button>
+                            <a class="font-semibold  href="">for upto six people <span><i class=" fa-solid
+                                fa-chevron-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h-[100%] w-[50%] basis-50%  lg:relative   flex-shrink-0 flex-1 ">
+
+                    <div
+                        class="slide2 h-[36.25rem] lg:h-[100%] w-[100%] basis-50% shrink-0 bg-[url('heroImage2Smallscreen')] lg:bg-[url('Highlight-Surface-Pro-9-M1-Family-02-1_VP4-1399x600.avif')] bg-cover bg-center">
+                    </div>
+                    <div
+                        class="h-auto bg-white  shadow-md  static lg:shadow-none  lg:h-auto lg:bg-transparent lg:absolute lg:top-36 lg:right-[5rem] lg:w-[35%]  p-12">
+                        <h1 class="font-semibold leading-tight text-[1.7rem] mb-4">Surface Pro 9
+                        </h1>
+                        <p class="mb-4">Tablet versatility and laptop power — all in one ultra-portable device</p>
+                        <div class="flex flex-wrap items-center">
+                            <button
+                                class="bg-[#0067b8] mt-2 mr-6 mb-2 pt-[0.625rem] pr-[0.75rem] pb-[0.625rem] pl-[0.75rem] rounded-sm text-white font-semibold">Learn
+                                more</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------buttons------------------------------ -->
+    <div class="flex justify-center">
+        <button class="my-6 mx-8 relative hover:cursor-pointer">
+            <span class="pauseBtn absolute top-0 left-0 hidden"><i
+                    class="text-xl fa-regular fa-circle-pause"></i></span>
+            <span class="playBtn absolute top-0 left-0 "><i class="text-xl fa-solid fa-circle-play"></i></span>
+        </button>
+
+        <button class="swipeLeftBtn my-6 mx-4 hover:cursor-pointer"><i
+                class="text-2xl fa-solid fa-angle-left"></i></button>
+
+        <div class="my-6 mx-6 relative">
+            <span class="absolute top-0 left-0"><i class="text-xs fa-solid fa-circle"></i></span>
+            <span class="absolute top-0 left-0 hidden"><i class="text-xs fa-regular fa-circle"></i></span>
+        </div>
+
+        <div class="my-6 mx-6 relative">
+            <span class="absolute top-0 left-0"><i class="text-xs fa-regular fa-circle"></i></span>
+            <span class="absolute top-0 left-0 hidden"><i class="text-xs fa-solid fa-circle"></i></span>
+        </div>
+
+        <button class="swipeRightBtn  my-2 mx-6 hover:cursor-pointer"><i
+                class="text-2xl fa-solid fa-angle-right"></i></button>
+    </div>
+    <!-- --------------------------icons after buttons-------------------------------- -->
+    <div class="px-24">
+        <ul class="flex flex-wrap justify-center items-center px-10 py-7 my-4">
+            <li class="flex justify-center items-center flex-col mx-6 my-4">
+                <div class="h-10 w-10 mb-2">
+                    <img class="bg-cover hover:cursor-pointer" src="windowslogo.svg" alt="img">
+                </div>
+                <a class=" hover:cursor-pointer text-[#0067b8] underline font-semibold" href="">Choose your
+                    Microsoft 365</a>
+            </li>
+            <li class=" flex justify-center items-center flex-col mx-6 my-4">
+                <div class="h-10 w-10 mb-2">
+                    <img class="bg-cover hover:cursor-pointer" src="Link-List-Icons-Xbox-Games-Consoles.svg" alt="">
+                </div>
+                <a class=" hover:cursor-pointer text-[#0067b8] underline font-semibold" href="">Shop Xbox games and
+                    consoles</a>
+            </li>
+            <li class=" flex justify-center items-center flex-col mx-6 my-4">
+                <div class="h-10 w-10 mb-2">
+                    <img class="bg-cover hover:cursor-pointer" src="Link-List-Icons-Microsoft-365.svg" alt="">
+                </div>
+                <a class=" hover:cursor-pointer text-[#0067b8] underline font-semibold" href="">Get Windows 11</a>
+            </li>
+            <li class=" flex justify-center items-center flex-col mx-6 my-4">
+                <div class="h-10 w-10 mb-2">
+                    <img class=" bg-cover hover:cursor-pointer" src="Link-List-Icons-Surface-Devices.svg" alt="">
+                </div>
+                <a class=" hover:cursor-pointer text-[#0067b8] underline font-semibold" href="">Explore Surface
+                    devices</a>
+            </li>
+        </ul>
+    </div>
+    <!-- --------------------------------cards------------------------------ -->
+    <div
+        class="cardHolder grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-16 my-12 gap-x-6 w-full h-full hover:cursor-pointer">
+    </div>
+    <!-- ---------------------PICTURE section -------------------------------------->
+    <div class="relative px-16 my-12 h-full">
+        <div class="pictureHolder h-full w-full">
+            <img class=" hover:cursor-pointer object-cover w-[100%]" src="PICTURE.jpeg" alt="">
+        </div>
+        <div class="absolute h-auto w-[320px] top-36 left-40 text-white">
+            <h1 class="font-semibold text-3xl mb-3">Xbox Game Pass Ultimate</h1>
+            <p class="mb-3">Play new games on day one. Plus, enjoy hundreds of high-quality games with friends on
+                console and PC.
+            </p>
+            <button
+                class="bg-[#0067b8] mt-2 mr-6 mb-2 pt-[0.625rem] pr-[0.75rem] pb-[0.625rem] pl-[0.75rem] rounded-sm text-white font-semibold">Join
+                now</button>
+        </div>
+    </div>
+    <!-- ----------------------------cards-------------------------------- -->
+    <div
+        class="cardHolder2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-8  md:px-16 my-24  gap-x-6 h-full hover:cursor-pointer">
+    </div>
+
+    <!-- ----------------------------social media----------------------------------- -->
+    <div class="px-16">
+        <div class="flex items-center">
+            <div class="ml-2">
+                <p>Follow Microsoft</p>
+            </div>
+            <div class="h-8 w-8 ml-2">
+                <img class=" hover:cursor-pointer" src="Facebook 2x.avif" alt="">
+            </div>
+            <div class="h-8 w-8 ml-2">
+                <img class=" hover:cursor-pointer" src="icon-MSCOM-X-64x64.webp" alt="">
+            </div>
+            <div class="h-8 w-8 ml-2">
+                <img class=" hover:cursor-pointer" src="YouTube 2x.webp" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------back to top button----------------------------- -->
+    <div class="sticky bottom-0 transition-all">
+        <div class="backtoTop flex justify-end mb-12 ">
+            <button
+                class="text-black mt-2 mr-3 mb-2 pt-[0.625rem] pr-[0.75rem] pb-[0.625rem] pl-[0.75rem] bg-[#dedada] rounded-sm  font-semibold bg-gradient-to-r from-[rgba(0,0,0,0.15)] to-[rgba(0,0,0,0.15)] hover:cursor-pointer hover:bg-white"><span><i
+                        class="mr-3 ml-2 fa-solid fa-arrow-up"></i></span>Back to top</button>
+        </div>
+    </div>
+
+    <!-- ----------------------------------footer--------------------------------------------- -->
+    <div class="px-16 bg-[rgba(0,0,0,0.05)] w-screen">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 pt-6">
+            <ul>
+                <h1 class="py-[7px] text-base text-[#616161] font-semibold">What's new</h1>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer"> Microsoft 365
+                </li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Games</li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Surface Pro 9</li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Surface Laptop 5
+                </li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Surface Laptop Go
+                    2</li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Windows 11 apps
+                </li>
+            </ul>
+            <ul>
+                <h1 class="py-2 text-[#616161] font-semibold">Microsoft Store</h1>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Account profile
+                </li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Download Center
+                </li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Microsoft Store
+                    Support</li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Returns</li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Order tracking
+                </li>
+
+            </ul>
+            <ul>
+                <h1 class="py-[7px] text-[#616161] font-semibold">Education</h1>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Microsoft in
+                    education</li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Devices for
+                    education</li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Microsoft Teams
+                    for Education</li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Microsoft 365
+                    Education</li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Office Education
+                </li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Educator training
+                    and development</li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Deals for students
+                    and parents</li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Azure for students
+                </li>
+            </ul>
+            <ul>
+                <h1 class="py-[7px] text-[#616161] font-semibold">Business</h1>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Microsoft Cloud
+                </li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Microsoft Security
+                </li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Azure</li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Dynamics 365</li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Microsoft 365</li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Microsoft
+                    Advertising</li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Microsoft Industry
+                </li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Microsoft Teams
+                </li>
+            </ul>
+            <ul>
+                <h1 class="py-[7px] text-[#616161] font-semibold">Developer & IT</h1>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Developer Center
+                    Center</li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Documentation</li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Microsoft Learn
+                </li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Microsoft Tech
+                    Community</li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Azure Marketplace
+                </li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">AppSource</li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Microsoft Power
+                    Platform</li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Visual Studio</li>
+            </ul>
+            <ul>
+                <h1 class="py-[7px] text-[#616161] font-semibold">Company</h1>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Careers</li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">About Microsoft
+                </li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Company news</li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Privacy at
+                    Microsoft</li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Investors</li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Security</li>
+                <li class="py-[7px] text-xs text-[#616161] pr-4 hover:underline hover:cursor-pointer">Sustainability
+                </li>
+            </ul>
+        </div>
+        <div class="flex justify-between  flex-wrap pt-12 pb-4">
+            <div class="lg:flex lg:flex-wrap justify-between mb-4 md:mb-0">
+                <div class="flex justify-between items-center mr-4">
+                    <span class="mr-2"><i class="text-[#616161] text-lg fa-solid fa-earth-asia"></i></span>
+                    <p class="text-xs text-[#616161] hover:underline hover:cursor-pointer">English (India)</p>
+                </div>
+                <div class=" flex justify-between items-center mr-0">
+                    <span class="mr-2 ml-[-6px] md:ml-0 p-0"><img
+                            src="California Consumer Privacy Act (CCPA) Opt-Out Icon.svg" alt=""></span>
+                    <p class="text-xs text-[#616161] hover:underline hover:cursor-pointer">Your Privacy Choices</p>
+                </div>
+            </div>
+            <div class="ml-[-20px] md:ml-0">
+                <ul class="flex flex-wrap">
+                    <li class="text-xs mb-2 px-4 text-[#616161] hover:underline hover:cursor-pointer">Contact Microsoft
+                    </li>
+                    <li class="text-xs mb-2 px-4 text-[#616161] hover:underline hover:cursor-pointer"> Privacy</li>
+                    <li class="text-xs mb-2 px-4 text-[#616161] hover:underline hover:cursor-pointer"> Terms of use</li>
+                    <li class="text-xs mb-2 px-4 text-[#616161] hover:underline hover:cursor-pointer"> Trademarks</li>
+                    <li class="text-xs mb-2 px-4 text-[#616161] hover:underline hover:cursor-pointer">About our ads</li>
+                    <li class="text-xs mb-2 px-4 text-[#616161]"> © Microsoft 2023</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
